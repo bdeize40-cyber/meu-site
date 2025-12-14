@@ -1,0 +1,337 @@
+html{
+    background-color: #F8F5F2;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 8px 8px 10px black;
+    padding: 20px;
+    background-color: #B22222;
+    border-radius: 150px 0 150px 0;
+    color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.lado{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #B22222;
+    border-radius: 50px;
+}
+
+/*imagem lado do texto*/
+.lado img{
+    width: 170px;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.lado p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 2px 2px 4px grey;
+}
+
+
+/*med2*/
+.foto{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #B22222;
+    border-radius: 50px;
+}
+
+/*imagem lado do texto*/
+.foto img{
+    width: 170px;
+    border-radius: 40px 0 40px 0;
+    box-shadow: 2px 2px 4px grey;
+}
+
+.foto p {
+    font-size: 20px;
+    line-height: 1.5;
+     color: white;
+    text-shadow: 2px 2px 4px grey;
+    transform: 0.3s;
+}
+
+/*whatsapp*/
+.btn{
+    background-color: #B22222;
+    color: white;
+    padding: 14px 26px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.btn:hover{
+    background-color: #01792f;
+}
+
+
+/*produtos*/
+.produto{
+    display: flex;
+    flex-direction: column; /* coloca imagem e texto encaixados um embaixo do outro */
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #ccc; /* borda ao redor */
+    padding: 20px; 
+    border-radius: 20px;  /* deixa a caixinha arredondada */
+    width: 250px; /* ajusta tamanho da caixinha */
+    background-color: #B22222; /* fundo vermelho */
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2); /* sombra leve */
+}
+
+
+/*preventivo*/
+.preventivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preventivo img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+/*estetuca*/
+.estetica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estetica img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 59%;
+}
+
+/*aparelho*/
+.aparelho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aparelho img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 59%;
+}
+
+/*tratamento*/
+.tratamento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tratamento img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 59%;
+}
+
+/*implantes*/
+.implantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.implantes img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 59%;
+}
+
+/*criança*/
+.crianca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crianca img{
+    margin-bottom: 20px;
+    width: 300px;
+    border-radius: 59%;
+}
+
+/*photo*/
+.photo{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.frame{
+    border: 4px solid #B22222;
+    padding: 6px;
+    background: #B22222;
+    border-radius: 10px;
+}
+
+.frame img{
+    display: block;
+    width: 280px;
+    border-radius: 90px 0 90px 0;
+    object-fit: cover;
+}
+
+/*xloud*/
+.cloud{
+    background-color: #B22222;
+    display: inline-block;
+    padding: 6px 12px;
+    border: 7px solid #B22222;
+    border-radius: 12px;
+    color: white;
+     display: inline-block;
+}
+
+.cloud:hover{ 
+     background-color: #01792f;
+     border: 7px solid #01792f;
+    }
+
+.contato{
+    text-align: center;
+     text-shadow: 4px 4px 10px grey;
+    padding: 20px;
+    background-color: #B22222;
+    border-radius: 150px 0 150px 0;
+    color: white;
+}
+
+
+/* Estilos para telas pequenas (celulares) */
+@media (max-width: 768px) {
+
+  /* Corpo do site */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;  /* Impede rolagem horizontal */
+  }
+
+  /* Container principal */
+  .container, .section {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Títulos */
+  h1, h2, h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Imagens */
+  img {
+    max-width: 100%;
+    height: auto;  /* Faz as imagens se ajustarem automaticamente */
+    margin-bottom: 10px;
+  }
+
+  /* Cards (ajustar layout para celular) */
+  .cards {
+    display: flex;
+    flex-direction: column;  /* Coloca os itens um embaixo do outro */
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Botões */
+  button {
+    width: 90%;  /* Ajusta o tamanho do botão */
+    padding: 15px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #B22222;  /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Botão de hover */
+  button:hover {
+    background-color: #A11A1A;  /* Muda a cor do botão ao passar o mouse */
+  }
+
+  /* Alinhar textos no centro */
+  .text-center {
+    text-align: center;
+  }
+
+  /* Ajustar para imagens de profissionais ou outras seções */
+  .profile-image {
+    border-radius: 50%;  /* Imagem circular */
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* Texto de parágrafo em tamanho responsivo */
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  /* Diferenciais */
+  .differentials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Ajuste no layout de serviço ou galeria de imagens */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Ajustar o rodapé */
+  footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Diferente do desktop, ajusta as informações de contato */
+  .contact-info {
+    text-align: center;
+  }
+}
